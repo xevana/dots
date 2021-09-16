@@ -8,8 +8,8 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/dagbenyega/.oh-my-zsh"
+# Path to your oh-my-zsh installation. [CHANGE]
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -77,7 +77,30 @@ export ZSH="/Users/dagbenyega/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+  # asdf
+  # battery
+  brew
+  # bundler
+  # copydir
+  # copybuffer
+  # copyfile
+  # extract
+  # fzf
+  # gem
+  npm
+  # osx
+  # rails
+  # rake
+  # redis-cli
+  # thefuck
+  tmux
+  # urltools
+  zsh_reload
+  # zsh-interactive-cd
+  fasd
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,7 +115,7 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
