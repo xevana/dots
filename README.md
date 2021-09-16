@@ -1,0 +1,2 @@
+# dots
+Incremental nvim configuration
